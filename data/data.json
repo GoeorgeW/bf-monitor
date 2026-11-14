@@ -3,8 +3,40 @@
   "ntfy_topic": "bf-a88fa67f4281b66a",
   "notify_min_drop": true
  },
- "updated": "2026-11-14T23:26:32+00:00",
+ "updated": "2026-11-14T23:35:23+00:00",
  "products": [
+  {
+   "id": 6,
+   "url": "https://eu.gymshark.com/es-ES/products/gymshark-conditioning-club-washed-tank-sleeveless-tops-pink-aw26",
+   "name": "Camiseta gymshark",
+   "size": "XL",
+   "target_price": 20.0,
+   "created_at": "2026-11-14T23:35:22+00:00",
+   "history": [
+    {
+     "t": "2026-11-14T23:35:23+00:00",
+     "p": 30.0
+    }
+   ],
+   "last_checked": "2026-11-14T23:35:23+00:00",
+   "price": 30.0,
+   "currency": "EUR",
+   "in_stock": true,
+   "coupon": "15% dto",
+   "size_matched": true,
+   "source": "ld+json",
+   "last_error": null,
+   "image": "http://cdn.shopify.com/s/files/1/1367/5201/files/Conditioning_Club_Washed_Tank_GS_Haze_Pink_GS_Soft_Brown_WASH_A4C3Z_KDP4_3_af0bccc0-eabf-4e38-8ebe-8929e01b2571.jpg?v=1788252112",
+   "title": "Gymshark Conditioning Club Washed Tank - Haze Pink/Soft Brown/Wash",
+   "min_price": 30.0,
+   "avg_price": 30.0,
+   "status": {
+    "code": "NEUTRAL",
+    "label": "RECOPILANDO",
+    "hint": "Sin variaciones relevantes todavía."
+   },
+   "last_alert_price": null
+  },
   {
    "id": 5,
    "url": "https://eu.gymshark.com/es-ES/products/gymshark-accent-capped-sleeve-t-shirt-ss-tops-black-ss26",
