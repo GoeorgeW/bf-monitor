@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <title>BF Monitor</title>
+  <meta name="theme-color" content="#0b0f17" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="BF Monitor" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: "class", theme: { extend: { colors: { bg: "#0b0f17", card: "#131a26", line: "#1f2a3b" } } } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <style>
+    html, body { background: #0b0f17; -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; }
+    body { padding-top: env(safe-area-inset-top); }
+    .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+    input, select, button { font-size: 16px; } /* evita el zoom automático de iOS */
+    .spin { animation: spin 0.9s linear infinite; } @keyframes spin { to { transform: rotate(360deg); } }
+    .tab-active { color: #4ade80; }
+    dialog::backdrop { background: rgba(0,0,0,.65); }
+    dialog { margin: auto auto 0 auto; max-width: 28rem; width: 100%; border: 0; padding: 0; background: transparent; }
+  </style>
+</head>
+<body class="bg-bg text-slate-100 min-h-screen font-sans antialiased">
+
+  <!-- Cabecera -->
+  <header class="sticky top-0 z-30 bg-bg/90 backdrop-blur border-b border-line">
+    <div class="max-w-xl mx-auto px-4 py-3 flex items-center justify-between">
+      <h1 id="title" class="text-lg font-bold tracking-tight">🔥 BF Monitor</h1>
+      <span id="conn" class="text-xs px-2 py-1 rounded-full bg-slate-800 text-slate-400">…</span>
+    </div>
+    <div id="banner" class="hidden max-w-xl mx-auto px-4 pb-2 text-xs text-amber-300"></div>
+  </header>
+
+  <main class="max-w-xl mx-auto px-4 pt-4 pb-28">
+
+    <!-- ===== MONITOR ===== -->
+    <section id="view-monitor">
+      <button id="btn-refresh" class="w-full flex items-center justify-center gap-2 rounded-2xl bg-emerald-500 active:bg-emerald-600 text-slate-950 font-bold py-4 text-base shadow-lg shadow-emerald-500/20">
+        <svg id="spinner" class="hidden spin w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 3a9 9 0 1 0 9 9" stroke-linecap="round"/></svg>
+        <span id="refresh-label">Actualizar precios ahora</span>
+      </button>
+      <p id="last-sync" class="text-center text-xs text-slate-500 mt-2"></p>
+      <div id="list" class="mt-4 space-y-4"></div>
+      <div id="empty" class="hidden text-center py-16 text-slate-400">
+        <div class="text-5xl mb-3">🛒</div>
+        <p class="font-semibold text-slate-200">Aún no vigilas nada</p>
+        <p class="text-sm mt-1">Pulsa <b>+</b> y pega la URL de un producto.</p>
+      </div>
+    </section>
+
+    <!-- ===== AÑADIR ===== -->
+    <section id="view-add" class="hidden">
+      <h2 class="text-xl font-bold mb-4">Añadir producto</h2>
+      <form id="form-add" class="space-y-4" autocomplete="off">
+        <div>
+          <label class="block text-sm text-slate-400 mb-1">URL del producto</label>
+          <div class="flex gap-2">
+            <input id="f-url" type="url" required placeholder="https://www.nike.com/es/t/…" class="flex-1 min-w-0 rounded-xl bg-card border border-line px-4 py-3 focus:outline-none focus:border-emerald-500" />
+            <button type="button" id="btn-paste" class="rounded-xl bg-slate-800 px-4 text-sm">Pegar</button>
+          </div>
+          <p class="text-xs text-slate-500 mt-1">Nike, Idealo, Amazon, Zalando, Footshop…</p>
+        </div>
+        <div>
+          <label class="block text-sm text-slate-400 mb-1">Nombre corto</label>
+          <input id="f-name" type="text" required maxlength="80" placeholder="Air Max 90 negras" class="w-full rounded-xl bg-card border border-line px-4 py-3 focus:outline-none focus:border-emerald-500" />
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-sm text-slate-400 mb-1">Talla / variante</label>
+            <input id="f-size" type="text" maxlength="30" placeholder="43 EU" class="w-full rounded-xl bg-card border border-line px-4 py-3 focus:outline-none focus:border-emerald-500" />
+          </div>
+          <div>
+            <label class="block text-sm text-slate-400 mb-1">Precio objetivo (€)</label>
+            <input id="f-target" type="text" inputmode="decimal" placeholder="89.99" class="w-full rounded-xl bg-card border border-line px-4 py-3 focus:outline-none focus:border-emerald-500" />
+          </div>
+        </div>
+        <button id="btn-add" type="submit" class="w-full flex items-center justify-center gap-2 rounded-2xl bg-emerald-500 active:bg-emerald-600 text-slate-950 font-bold py-4">
+          <svg id="spinner-add" class="hidden spin w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 3a9 9 0 1 0 9 9" stroke-linecap="round"/></svg>
+          <span id="add-label">Continuar en GitHub →</span>
+        </button>
+        <p class="text-xs text-slate-400 rounded-xl bg-card border border-line p-3">Se abrirá GitHub con todo ya rellenado: solo pulsa el botón verde <b>Create</b> (o <b>Submit new issue</b>). En 1-2 minutos el producto aparecerá aquí.</p>
+      </form>
+    </section>
+
+    <!-- ===== AJUSTES ===== -->
+    <section id="view-settings" class="hidden space-y-6">
+      <h2 class="text-xl font-bold">Ajustes y alertas</h2>
+      <div class="rounded-2xl bg-card border border-line p-4 space-y-3">
+        <h3 class="font-semibold">🔔 Avisos en tu iPhone</h3>
+        <ol class="text-sm text-slate-300 list-decimal pl-5 space-y-1">
+          <li>Instala la app gratuita <b>ntfy</b> desde la App Store.</li>
+          <li>Ábrela, pulsa <b>+</b> y pega este nombre de canal:</li>
+        </ol>
+        <div class="flex gap-2">
+          <input id="s-topic" readonly class="flex-1 min-w-0 rounded-xl bg-bg border border-line px-4 py-3 font-mono text-sm" />
+          <button id="btn-copy" class="rounded-xl bg-emerald-500 text-slate-950 font-bold px-4">Copiar</button>
+        </div>
+        <a href="https://apps.apple.com/app/ntfy/id1625396347" target="_blank" rel="noopener" class="block text-center rounded-xl bg-slate-700 py-3 font-semibold">Abrir ntfy en la App Store</a>
+        <p class="text-xs text-slate-500">Te avisará cuando un precio llegue a tu objetivo o marque un nuevo mínimo.</p>
+      </div>
+      <div class="rounded-2xl bg-card border border-line p-4 space-y-3">
+        <h3 class="font-semibold">⏱ Revisión automática</h3>
+        <p class="text-sm text-slate-300">GitHub revisa todos los precios cada 30 minutos aunque tengas el móvil apagado.</p>
+        <p id="s-updated" class="text-xs text-slate-500"></p>
+        <a id="lnk-run" target="_blank" rel="noopener" class="block text-center rounded-xl bg-slate-700 py-3 font-semibold">Forzar revisión ahora (GitHub)</a>
+        <p class="text-xs text-slate-500">En esa página: botón <b>Run workflow</b> → <b>Run workflow</b>.</p>
+      </div>
+      <p class="text-center text-xs text-slate-600" id="s-repo"></p>
+    </section>
+  </main>
+
+  <!-- Navegación inferior fija -->
+  <nav class="fixed bottom-0 inset-x-0 z-40 bg-bg/95 backdrop-blur border-t border-line safe-bottom">
+    <div class="max-w-xl mx-auto grid grid-cols-3">
+      <button data-tab="monitor" class="tab flex flex-col items-center py-2.5 text-slate-400">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+        <span class="text-[11px] mt-0.5">Monitor</span>
+      </button>
+      <button data-tab="add" class="tab flex flex-col items-center py-2 text-slate-400">
+        <span class="flex items-center justify-center w-11 h-11 -mt-5 rounded-full bg-emerald-500 text-slate-950 shadow-lg shadow-emerald-500/30">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+        </span>
+        <span class="text-[11px] mt-0.5">Añadir</span>
+      </button>
+      <button data-tab="settings" class="tab flex flex-col items-center py-2.5 text-slate-400">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg>
+        <span class="text-[11px] mt-0.5">Ajustes</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hoja de edición -->
+  <dialog id="dlg-edit">
+    <form method="dialog" id="form-edit" class="bg-card border-t border-line rounded-t-3xl p-5 space-y-3 safe-bottom">
+      <h3 class="font-bold text-lg">Editar producto</h3><p class="text-xs text-slate-400">Se abrirá GitHub con los cambios: pulsa el botón verde para confirmar.</p>
+      <input id="e-name" type="text" required maxlength="80" class="w-full rounded-xl bg-bg border border-line px-4 py-3" />
+      <div class="grid grid-cols-2 gap-3">
+        <input id="e-size" type="text" maxlength="30" placeholder="Talla" class="rounded-xl bg-bg border border-line px-4 py-3" />
+        <input id="e-target" type="text" inputmode="decimal" placeholder="Objetivo €" class="rounded-xl bg-bg border border-line px-4 py-3" />
+      </div>
+      <div class="grid grid-cols-2 gap-3 pt-1">
+        <button type="button" id="e-cancel" class="rounded-xl bg-slate-700 py-3 font-semibold">Cancelar</button>
+        <button type="submit" class="rounded-xl bg-emerald-500 text-slate-950 py-3 font-bold">Guardar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="fixed left-1/2 -translate-x-1/2 bottom-24 z-50 hidden max-w-[90%] px-4 py-2 rounded-full bg-slate-100 text-slate-900 text-sm font-medium shadow-xl"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

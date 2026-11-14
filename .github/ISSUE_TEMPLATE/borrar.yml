@@ -1,0 +1,8 @@
+name: Borrar producto
+description: Dejar de vigilar un producto
+title: "[Borrar] producto"
+body:
+  - type: input
+    id: id
+    attributes: { label: Número del producto }
+    validations: { required: true }

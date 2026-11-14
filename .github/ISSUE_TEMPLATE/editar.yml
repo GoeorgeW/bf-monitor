@@ -1,0 +1,17 @@
+name: Editar producto
+description: Cambiar nombre, talla o precio objetivo
+title: "[Editar] producto"
+body:
+  - type: input
+    id: id
+    attributes: { label: Número del producto }
+    validations: { required: true }
+  - type: input
+    id: nombre
+    attributes: { label: Nombre corto }
+  - type: input
+    id: talla
+    attributes: { label: Talla o variante }
+  - type: input
+    id: precio
+    attributes: { label: Precio objetivo en euros }

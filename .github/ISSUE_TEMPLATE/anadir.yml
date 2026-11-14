@@ -1,0 +1,17 @@
+name: Añadir producto
+description: Vigilar un producto nuevo
+title: "[Añadir] producto"
+body:
+  - type: input
+    id: url
+    attributes: { label: URL del producto }
+    validations: { required: true }
+  - type: input
+    id: nombre
+    attributes: { label: Nombre corto }
+  - type: input
+    id: talla
+    attributes: { label: Talla o variante }
+  - type: input
+    id: precio
+    attributes: { label: Precio objetivo en euros }
