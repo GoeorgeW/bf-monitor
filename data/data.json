@@ -3,7 +3,7 @@
   "ntfy_topic": "bf-a88fa67f4281b66a",
   "notify_min_drop": true
  },
- "updated": "2026-11-15T02:54:42+00:00",
+ "updated": "2026-11-15T10:11:57+00:00",
  "products": [
   {
    "id": 7,
@@ -16,9 +16,13 @@
     {
      "t": "2026-11-14T23:37:53+00:00",
      "p": 111.99
+    },
+    {
+     "t": "2026-11-15T10:11:55+00:00",
+     "p": 111.99
     }
    ],
-   "last_checked": "2026-11-15T02:54:40+00:00",
+   "last_checked": "2026-11-15T10:11:55+00:00",
    "price": 111.99,
    "currency": "EUR",
    "in_stock": null,
@@ -48,13 +52,17 @@
     {
      "t": "2026-11-14T23:35:23+00:00",
      "p": 30.0
+    },
+    {
+     "t": "2026-11-15T10:11:55+00:00",
+     "p": 30.0
     }
    ],
-   "last_checked": "2026-11-15T02:54:40+00:00",
+   "last_checked": "2026-11-15T10:11:55+00:00",
    "price": 30.0,
    "currency": "EUR",
    "in_stock": true,
-   "coupon": "15% dto",
+   "coupon": "10% dto",
    "size_matched": true,
    "source": "ld+json",
    "last_error": null,
@@ -80,13 +88,17 @@
     {
      "t": "2026-11-14T23:26:32+00:00",
      "p": 30.0
+    },
+    {
+     "t": "2026-11-15T10:11:55+00:00",
+     "p": 30.0
     }
    ],
-   "last_checked": "2026-11-15T02:54:40+00:00",
+   "last_checked": "2026-11-15T10:11:55+00:00",
    "price": 30.0,
    "currency": "EUR",
    "in_stock": true,
-   "coupon": "15% dto",
+   "coupon": "10% dto",
    "size_matched": true,
    "source": "ld+json",
    "last_error": null,
@@ -112,13 +124,17 @@
     {
      "t": "2026-11-14T23:22:59+00:00",
      "p": 40.0
+    },
+    {
+     "t": "2026-11-15T10:11:56+00:00",
+     "p": 40.0
     }
    ],
-   "last_checked": "2026-11-15T02:54:41+00:00",
+   "last_checked": "2026-11-15T10:11:56+00:00",
    "price": 40.0,
    "currency": "EUR",
    "in_stock": true,
-   "coupon": "15% dto",
+   "coupon": "10% dto",
    "size_matched": true,
    "source": "ld+json",
    "last_error": null,
@@ -144,13 +160,17 @@
     {
      "t": "2026-11-14T23:21:40+00:00",
      "p": 35.0
+    },
+    {
+     "t": "2026-11-15T10:11:57+00:00",
+     "p": 35.0
     }
    ],
-   "last_checked": "2026-11-15T02:54:42+00:00",
+   "last_checked": "2026-11-15T10:11:57+00:00",
    "price": 35.0,
    "currency": "EUR",
    "in_stock": true,
-   "coupon": "15% dto",
+   "coupon": "10% dto",
    "size_matched": true,
    "source": "ld+json",
    "last_error": null,
@@ -176,13 +196,17 @@
     {
      "t": "2026-11-14T23:18:59+00:00",
      "p": 38.0
+    },
+    {
+     "t": "2026-11-15T10:11:57+00:00",
+     "p": 38.0
     }
    ],
-   "last_checked": "2026-11-15T02:54:42+00:00",
+   "last_checked": "2026-11-15T10:11:57+00:00",
    "price": 38.0,
    "currency": "EUR",
    "in_stock": true,
-   "coupon": "15% dto",
+   "coupon": "10% dto",
    "size_matched": true,
    "source": "ld+json",
    "last_error": null,
@@ -208,9 +232,13 @@
     {
      "t": "2026-11-14T23:15:23+00:00",
      "p": 111.99
+    },
+    {
+     "t": "2026-11-15T10:11:57+00:00",
+     "p": 111.99
     }
    ],
-   "last_checked": "2026-11-15T02:54:42+00:00",
+   "last_checked": "2026-11-15T10:11:57+00:00",
    "price": 111.99,
    "currency": "EUR",
    "in_stock": null,
