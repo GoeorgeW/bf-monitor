@@ -3,7 +3,7 @@
   "ntfy_topic": "bf-a88fa67f4281b66a",
   "notify_min_drop": true
  },
- "updated": "2026-11-16T08:47:32+00:00",
+ "updated": "2026-11-16T12:21:53+00:00",
  "products": [
   {
    "id": 7,
@@ -52,54 +52,6 @@
     "hint": "Sin variaciones relevantes todavía."
    },
    "last_alert_price": null
-  },
-  {
-   "id": 6,
-   "url": "https://eu.gymshark.com/es-ES/products/gymshark-conditioning-club-washed-tank-sleeveless-tops-pink-aw26",
-   "name": "Camiseta gymshark",
-   "size": "XL",
-   "target_price": 20.0,
-   "created_at": "2026-11-14T23:35:22+00:00",
-   "history": [
-    {
-     "t": "2026-11-14T23:35:23+00:00",
-     "p": 30.0
-    },
-    {
-     "t": "2026-11-15T10:11:55+00:00",
-     "p": 30.0
-    },
-    {
-     "t": "2026-11-15T17:18:47+00:00",
-     "p": 18.0
-    },
-    {
-     "t": "2026-11-16T01:31:33+00:00",
-     "p": 18.0
-    },
-    {
-     "t": "2026-11-16T08:47:30+00:00",
-     "p": 18.0
-    }
-   ],
-   "last_checked": "2026-11-16T08:47:30+00:00",
-   "price": 18.0,
-   "currency": "EUR",
-   "in_stock": true,
-   "coupon": "10% dto",
-   "size_matched": true,
-   "source": "ld+json",
-   "last_error": null,
-   "image": "http://cdn.shopify.com/s/files/1/1367/5201/files/Conditioning_Club_Washed_Tank_GS_Haze_Pink_GS_Soft_Brown_WASH_A4C3Z_KDP4_3_af0bccc0-eabf-4e38-8ebe-8929e01b2571.jpg?v=1788252112",
-   "title": "Gymshark Conditioning Club Washed Tank - Haze Pink/Soft Brown/Wash",
-   "min_price": 18.0,
-   "avg_price": 22.8,
-   "status": {
-    "code": "CHOLLO",
-    "label": "CHOLLO REAL",
-    "hint": "Igual o por debajo de tu precio objetivo."
-   },
-   "last_alert_price": 18.0
   },
   {
    "id": 5,
