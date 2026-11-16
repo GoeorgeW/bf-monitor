@@ -3,7 +3,7 @@
   "ntfy_topic": "bf-a88fa67f4281b66a",
   "notify_min_drop": true
  },
- "updated": "2026-11-16T12:35:44+00:00",
+ "updated": "2026-11-16T12:36:06+00:00",
  "products": [
   {
    "id": 7,
@@ -94,54 +94,6 @@
    "title": "Gymshark Power T-Shirt - Black/Conditioning Red",
    "min_price": 21.0,
    "avg_price": 26.6,
-   "status": {
-    "code": "CHOLLO",
-    "label": "CHOLLO REAL",
-    "hint": "Nuevo mínimo histórico registrado."
-   },
-   "last_alert_price": null
-  },
-  {
-   "id": 2,
-   "url": "https://eu.gymshark.com/es-ES/products/gymshark-conditioning-club-washed-t-shirt-ss-tops-grey-aw26",
-   "name": "Camiseta gymshark",
-   "size": "XL",
-   "target_price": 15.0,
-   "created_at": "2026-11-14T23:18:57+00:00",
-   "history": [
-    {
-     "t": "2026-11-14T23:18:59+00:00",
-     "p": 38.0
-    },
-    {
-     "t": "2026-11-15T10:11:57+00:00",
-     "p": 38.0
-    },
-    {
-     "t": "2026-11-15T17:18:48+00:00",
-     "p": 22.0
-    },
-    {
-     "t": "2026-11-16T01:31:34+00:00",
-     "p": 22.0
-    },
-    {
-     "t": "2026-11-16T08:47:32+00:00",
-     "p": 22.0
-    }
-   ],
-   "last_checked": "2026-11-16T08:47:32+00:00",
-   "price": 22.0,
-   "currency": "EUR",
-   "in_stock": true,
-   "coupon": "10% dto",
-   "size_matched": true,
-   "source": "ld+json",
-   "last_error": null,
-   "image": "http://cdn.shopify.com/s/files/1/1367/5201/files/Conditioning_Club_Washed_T_Shirt_GS_Light_Grey_GS_Track_Green_WASH_A4C5N_GFB1_3_530c5cb4-a91b-4124-8b88-6c64b7d0a08f.jpg?v=1788257749",
-   "title": "Gymshark Conditioning Club Washed T-Shirt - Light Grey/Track Green/Wash",
-   "min_price": 22.0,
-   "avg_price": 28.4,
    "status": {
     "code": "CHOLLO",
     "label": "CHOLLO REAL",
