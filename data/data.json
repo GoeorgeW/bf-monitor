@@ -3,7 +3,7 @@
   "ntfy_topic": "bf-a88fa67f4281b66a",
   "notify_min_drop": true
  },
- "updated": "2026-11-16T12:35:07+00:00",
+ "updated": "2026-11-16T12:35:44+00:00",
  "products": [
   {
    "id": 7,
@@ -50,54 +50,6 @@
     "code": "NEUTRAL",
     "label": "SIN CAMBIOS",
     "hint": "Sin variaciones relevantes todavía."
-   },
-   "last_alert_price": null
-  },
-  {
-   "id": 4,
-   "url": "https://eu.gymshark.com/es-ES/products/gymshark-lifting-statue-graphic-t-shirt-ss-tops-black-aw26",
-   "name": "Camiseta gymshark",
-   "size": "XL",
-   "target_price": 20.0,
-   "created_at": "2026-11-14T23:22:58+00:00",
-   "history": [
-    {
-     "t": "2026-11-14T23:22:59+00:00",
-     "p": 40.0
-    },
-    {
-     "t": "2026-11-15T10:11:56+00:00",
-     "p": 40.0
-    },
-    {
-     "t": "2026-11-15T17:18:48+00:00",
-     "p": 28.0
-    },
-    {
-     "t": "2026-11-16T01:31:34+00:00",
-     "p": 28.0
-    },
-    {
-     "t": "2026-11-16T08:47:31+00:00",
-     "p": 28.0
-    }
-   ],
-   "last_checked": "2026-11-16T08:47:31+00:00",
-   "price": 28.0,
-   "currency": "EUR",
-   "in_stock": false,
-   "coupon": "10% dto",
-   "size_matched": true,
-   "source": "ld+json",
-   "last_error": null,
-   "image": "http://cdn.shopify.com/s/files/1/1367/5201/files/GFX_Better_Lifting_SS_Top_OCT_2_GS_Black_A5C1J_BB2J_3.jpg?v=1790167559",
-   "title": "Gymshark Lifting Statue Graphic T-Shirt - Black",
-   "min_price": 28.0,
-   "avg_price": 32.8,
-   "status": {
-    "code": "OOS",
-    "label": "SIN STOCK",
-    "hint": "Agotado en la tienda."
    },
    "last_alert_price": null
   },
