@@ -3,7 +3,7 @@
   "ntfy_topic": "bf-a88fa67f4281b66a",
   "notify_min_drop": true
  },
- "updated": "2026-11-16T12:36:06+00:00",
+ "updated": "2026-11-16T12:46:14+00:00",
  "products": [
   {
    "id": 7,
@@ -50,54 +50,6 @@
     "code": "NEUTRAL",
     "label": "SIN CAMBIOS",
     "hint": "Sin variaciones relevantes todavía."
-   },
-   "last_alert_price": null
-  },
-  {
-   "id": 3,
-   "url": "https://eu.gymshark.com/es-ES/products/gymshark-power-t-shirt-ss-tops-black-aw25-3",
-   "name": "Camiseta gymshark",
-   "size": "XL",
-   "target_price": 15.0,
-   "created_at": "2026-11-14T23:21:39+00:00",
-   "history": [
-    {
-     "t": "2026-11-14T23:21:40+00:00",
-     "p": 35.0
-    },
-    {
-     "t": "2026-11-15T10:11:57+00:00",
-     "p": 35.0
-    },
-    {
-     "t": "2026-11-15T17:18:48+00:00",
-     "p": 21.0
-    },
-    {
-     "t": "2026-11-16T01:31:34+00:00",
-     "p": 21.0
-    },
-    {
-     "t": "2026-11-16T08:47:32+00:00",
-     "p": 21.0
-    }
-   ],
-   "last_checked": "2026-11-16T08:47:32+00:00",
-   "price": 21.0,
-   "currency": "EUR",
-   "in_stock": true,
-   "coupon": "10% dto",
-   "size_matched": true,
-   "source": "ld+json",
-   "last_error": null,
-   "image": "http://cdn.shopify.com/s/files/1/1367/5201/files/images-PowerOriginalsT_ShirtGSBlackGSConditioningRedA4B9W_BC1D_5489_A.jpg?v=1762443936",
-   "title": "Gymshark Power T-Shirt - Black/Conditioning Red",
-   "min_price": 21.0,
-   "avg_price": 26.6,
-   "status": {
-    "code": "CHOLLO",
-    "label": "CHOLLO REAL",
-    "hint": "Nuevo mínimo histórico registrado."
    },
    "last_alert_price": null
   },
