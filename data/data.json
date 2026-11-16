@@ -3,7 +3,7 @@
   "ntfy_topic": "bf-a88fa67f4281b66a",
   "notify_min_drop": true
  },
- "updated": "2026-11-15T21:56:15+00:00",
+ "updated": "2026-11-16T01:31:35+00:00",
  "products": [
   {
    "id": 7,
@@ -24,9 +24,13 @@
     {
      "t": "2026-11-15T17:18:47+00:00",
      "p": 111.99
+    },
+    {
+     "t": "2026-11-16T01:31:33+00:00",
+     "p": 111.99
     }
    ],
-   "last_checked": "2026-11-15T21:56:13+00:00",
+   "last_checked": "2026-11-16T01:31:33+00:00",
    "price": 111.99,
    "currency": "EUR",
    "in_stock": null,
@@ -64,9 +68,13 @@
     {
      "t": "2026-11-15T17:18:47+00:00",
      "p": 18.0
+    },
+    {
+     "t": "2026-11-16T01:31:33+00:00",
+     "p": 18.0
     }
    ],
-   "last_checked": "2026-11-15T21:56:14+00:00",
+   "last_checked": "2026-11-16T01:31:33+00:00",
    "price": 18.0,
    "currency": "EUR",
    "in_stock": true,
@@ -77,7 +85,7 @@
    "image": "http://cdn.shopify.com/s/files/1/1367/5201/files/Conditioning_Club_Washed_Tank_GS_Haze_Pink_GS_Soft_Brown_WASH_A4C3Z_KDP4_3_af0bccc0-eabf-4e38-8ebe-8929e01b2571.jpg?v=1788252112",
    "title": "Gymshark Conditioning Club Washed Tank - Haze Pink/Soft Brown/Wash",
    "min_price": 18.0,
-   "avg_price": 26.0,
+   "avg_price": 24.0,
    "status": {
     "code": "CHOLLO",
     "label": "CHOLLO REAL",
@@ -104,9 +112,13 @@
     {
      "t": "2026-11-15T17:18:46+00:00",
      "p": 15.0
+    },
+    {
+     "t": "2026-11-16T01:31:32+00:00",
+     "p": 15.0
     }
    ],
-   "last_checked": "2026-11-15T21:56:14+00:00",
+   "last_checked": "2026-11-16T01:31:32+00:00",
    "price": 15.0,
    "currency": "EUR",
    "in_stock": false,
@@ -117,7 +129,7 @@
    "image": "http://cdn.shopify.com/s/files/1/1367/5201/files/HotGuySummerWashedCappedSleeveGSBlackA4C9T_BB2J_1042_d2602c80-d5d9-4711-8538-44a911e9a296.jpg?v=1779094576",
    "title": "Gymshark Accent Capped Sleeve T-Shirt - Black",
    "min_price": 15.0,
-   "avg_price": 25.0,
+   "avg_price": 22.5,
    "status": {
     "code": "OOS",
     "label": "SIN STOCK",
@@ -144,12 +156,16 @@
     {
      "t": "2026-11-15T17:18:48+00:00",
      "p": 28.0
+    },
+    {
+     "t": "2026-11-16T01:31:34+00:00",
+     "p": 28.0
     }
    ],
-   "last_checked": "2026-11-15T21:56:14+00:00",
+   "last_checked": "2026-11-16T01:31:34+00:00",
    "price": 28.0,
    "currency": "EUR",
-   "in_stock": true,
+   "in_stock": false,
    "coupon": "10% dto",
    "size_matched": true,
    "source": "ld+json",
@@ -157,11 +173,11 @@
    "image": "http://cdn.shopify.com/s/files/1/1367/5201/files/GFX_Better_Lifting_SS_Top_OCT_2_GS_Black_A5C1J_BB2J_3.jpg?v=1790167559",
    "title": "Gymshark Lifting Statue Graphic T-Shirt - Black",
    "min_price": 28.0,
-   "avg_price": 36.0,
+   "avg_price": 34.0,
    "status": {
-    "code": "LEVE",
-    "label": "BAJADA LEVE",
-    "hint": "Por debajo de la media, pero lejos del objetivo."
+    "code": "OOS",
+    "label": "SIN STOCK",
+    "hint": "Agotado en la tienda."
    },
    "last_alert_price": null
   },
@@ -184,9 +200,13 @@
     {
      "t": "2026-11-15T17:18:48+00:00",
      "p": 21.0
+    },
+    {
+     "t": "2026-11-16T01:31:34+00:00",
+     "p": 21.0
     }
    ],
-   "last_checked": "2026-11-15T21:56:15+00:00",
+   "last_checked": "2026-11-16T01:31:34+00:00",
    "price": 21.0,
    "currency": "EUR",
    "in_stock": true,
@@ -197,11 +217,11 @@
    "image": "http://cdn.shopify.com/s/files/1/1367/5201/files/images-PowerOriginalsT_ShirtGSBlackGSConditioningRedA4B9W_BC1D_5489_A.jpg?v=1762443936",
    "title": "Gymshark Power T-Shirt - Black/Conditioning Red",
    "min_price": 21.0,
-   "avg_price": 30.33,
+   "avg_price": 28.0,
    "status": {
-    "code": "LEVE",
-    "label": "BAJADA LEVE",
-    "hint": "Por debajo de la media, pero lejos del objetivo."
+    "code": "CHOLLO",
+    "label": "CHOLLO REAL",
+    "hint": "Nuevo mínimo histórico registrado."
    },
    "last_alert_price": null
   },
@@ -224,9 +244,13 @@
     {
      "t": "2026-11-15T17:18:48+00:00",
      "p": 22.0
+    },
+    {
+     "t": "2026-11-16T01:31:34+00:00",
+     "p": 22.0
     }
    ],
-   "last_checked": "2026-11-15T21:56:15+00:00",
+   "last_checked": "2026-11-16T01:31:34+00:00",
    "price": 22.0,
    "currency": "EUR",
    "in_stock": true,
@@ -237,11 +261,11 @@
    "image": "http://cdn.shopify.com/s/files/1/1367/5201/files/Conditioning_Club_Washed_T_Shirt_GS_Light_Grey_GS_Track_Green_WASH_A4C5N_GFB1_3_530c5cb4-a91b-4124-8b88-6c64b7d0a08f.jpg?v=1788257749",
    "title": "Gymshark Conditioning Club Washed T-Shirt - Light Grey/Track Green/Wash",
    "min_price": 22.0,
-   "avg_price": 32.67,
+   "avg_price": 30.0,
    "status": {
-    "code": "LEVE",
-    "label": "BAJADA LEVE",
-    "hint": "Por debajo de la media, pero lejos del objetivo."
+    "code": "CHOLLO",
+    "label": "CHOLLO REAL",
+    "hint": "Nuevo mínimo histórico registrado."
    },
    "last_alert_price": null
   },
@@ -264,9 +288,13 @@
     {
      "t": "2026-11-15T17:18:49+00:00",
      "p": 111.99
+    },
+    {
+     "t": "2026-11-16T01:31:35+00:00",
+     "p": 111.99
     }
    ],
-   "last_checked": "2026-11-15T21:56:15+00:00",
+   "last_checked": "2026-11-16T01:31:35+00:00",
    "price": 111.99,
    "currency": "EUR",
    "in_stock": null,
