@@ -3,7 +3,7 @@
   "ntfy_topic": "bf-a88fa67f4281b66a",
   "notify_min_drop": true
  },
- "updated": "2026-11-17T19:56:58+00:00",
+ "updated": "2026-11-18T02:03:32+00:00",
  "products": [
   {
    "id": 7,
@@ -48,10 +48,14 @@
     {
      "t": "2026-11-17T19:56:58+00:00",
      "p": 111.99
+    },
+    {
+     "t": "2026-11-18T02:03:31+00:00",
+     "p": 95.99
     }
    ],
-   "last_checked": "2026-11-17T19:56:58+00:00",
-   "price": 111.99,
+   "last_checked": "2026-11-18T02:03:31+00:00",
+   "price": 95.99,
    "currency": "EUR",
    "in_stock": null,
    "coupon": "30% dto",
@@ -60,14 +64,14 @@
    "last_error": null,
    "image": "https://static.nike.com/a/images/t_default/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7785d6fc-aa4b-496a-9559-c6ceeb457b93/NIKE+ZOOM+VOMERO+5+SE.png",
    "title": "Nike Zoom Vomero 5 SE Zapatillas - Hombre",
-   "min_price": 111.99,
-   "avg_price": 111.99,
+   "min_price": 95.99,
+   "avg_price": 110.39,
    "status": {
-    "code": "NEUTRAL",
-    "label": "SIN CAMBIOS",
-    "hint": "Sin variaciones relevantes todavía."
+    "code": "CHOLLO",
+    "label": "CHOLLO REAL",
+    "hint": "Igual o por debajo de tu precio objetivo."
    },
-   "last_alert_price": null
+   "last_alert_price": 95.99
   }
  ]
 }
