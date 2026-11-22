@@ -3,7 +3,7 @@
   "ntfy_topic": "bf-a88fa67f4281b66a",
   "notify_min_drop": true
  },
- "updated": "2026-11-22T18:09:34+00:00",
+ "updated": "2026-11-22T23:41:52+00:00",
  "products": [
   {
    "id": 7,
@@ -102,7 +102,7 @@
      "p": 95.99
     }
    ],
-   "last_checked": "2026-11-22T18:09:34+00:00",
+   "last_checked": "2026-11-22T23:41:52+00:00",
    "price": 95.99,
    "currency": "EUR",
    "in_stock": false,
