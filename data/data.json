@@ -3,7 +3,7 @@
   "ntfy_topic": "bf-a88fa67f4281b66a",
   "notify_min_drop": true
  },
- "updated": "2026-11-27T20:06:23+00:00",
+ "updated": "2026-11-28T02:51:45+00:00",
  "products": [
   {
    "id": 7,
@@ -152,9 +152,13 @@
     {
      "t": "2026-11-27T20:06:23+00:00",
      "p": 95.99
+    },
+    {
+     "t": "2026-11-28T02:51:45+00:00",
+     "p": 95.99
     }
    ],
-   "last_checked": "2026-11-27T20:06:23+00:00",
+   "last_checked": "2026-11-28T02:51:45+00:00",
    "price": 95.99,
    "currency": "EUR",
    "in_stock": null,
@@ -165,7 +169,7 @@
    "image": "https://static.nike.com/a/images/t_default/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/305a75c4-b498-4d8c-a52d-0781dac1c0af/NIKE+ZOOM+VOMERO+5.png",
    "title": "Nike Zoom Vomero 5 Zapatillas - Hombre",
    "min_price": 95.99,
-   "avg_price": 100.1,
+   "avg_price": 99.99,
    "status": {
     "code": "CHOLLO",
     "label": "CHOLLO REAL",
